@@ -24,5 +24,7 @@
 	<classpathentry kind="lib" path="/export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jersey-server-1.4.jar"/>
 	<classpathentry kind="lib" path="/export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jettison-1.1.jar"/>
 	<classpathentry kind="lib" path="/export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/angel.ossa/Descargas/Angular Problema de Acceso/cors-filter-1.3.2.jar"/>
+	<classpathentry kind="lib" path="/export/estudiantes/angel.ossa/Descargas/Angular Problema de Acceso/java-property-utils-1.7.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

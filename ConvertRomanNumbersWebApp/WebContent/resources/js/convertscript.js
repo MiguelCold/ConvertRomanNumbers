@@ -3,7 +3,7 @@
 var angularModule = angular.module('angularModule', []);
 
 // / *** URL WEB SERVICE *** ///
-var ROMANCONVERTER_WEB_SERVICE = 'http://localhost:5005/ConvertRomanNumbersWebApp/rest/number?';
+var ROMANCONVERTER_WEB_SERVICE = 'https://convertromannumberswebapp.herokuapp.com/rest/number?';
 
 // / *** WEB SERVICES *** ///
 
@@ -28,9 +28,7 @@ angularModule.controller('mainController', function($scope, convertWebService) {
 	$scope.convert = function() {
 		convertWebService.convertNumber($scope.number).success(function(data) {
 			if (data != 'error') {
-				$scope.romanNumber = data;
-				alert($scope.romanNumber);
-
+				$scope.romanNumber = data.response;
 			}
 		});
 	}

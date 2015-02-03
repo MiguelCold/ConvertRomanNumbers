@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 @XmlAccessorType(value = XmlAccessType.PROPERTY)
 public class Response {
+	
 	private String response;
 	private String request;
 

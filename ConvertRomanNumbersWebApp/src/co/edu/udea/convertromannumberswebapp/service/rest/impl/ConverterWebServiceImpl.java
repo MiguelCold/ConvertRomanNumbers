@@ -20,6 +20,7 @@ public class ConverterWebServiceImpl implements IConvertWebService {
 
 	public ConverterWebServiceImpl() {
 		response = new Response();
+		converter = new Converter();
 	}
 
 	@GET

@@ -2,20 +2,22 @@ package co.edu.udea.convertromannumberswebapp.model;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
+@XmlRootElement
+@XmlAccessorType(value = XmlAccessType.PROPERTY)
 public class Converter {
 
+	@XmlTransient
 	private ArrayList<String> units;
-
+	@XmlTransient
 	private ArrayList<String> tens;
-
+	@XmlTransient
 	private ArrayList<String> hundreds;
-
+	@XmlTransient
 	private ArrayList<String> thousands;
 
 	public Response response;

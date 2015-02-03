@@ -35,6 +35,12 @@
         <dependent-module archiveName="jettison-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jettison-1.1.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="cors-filter-1.3.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Angular Problema de Acceso/cors-filter-1.3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="java-property-utils-1.7.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Angular Problema de Acceso/java-property-utils-1.7.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="ConvertRomanNumbersWebApp"/>
         <property name="java-output-path" value="/ConvertRomanNumbersWebApp/build/classes"/>
     </wb-module>
