@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ConvertRomanNumbersWebApp">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="asm-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/asm-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-client-1.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jersey-client-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-jaxrs-1.5.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jackson-jaxrs-1.5.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsr311-api-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jsr311-api-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-core-1.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jersey-core-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-xc-1.5.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jackson-xc-1.5.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-json-1.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jersey-json-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-server-1.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jersey-server-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-mapper-asl-1.5.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jackson-mapper-asl-1.5.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-core-asl-1.5.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jackson-core-asl-1.5.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jettison-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//export/estudiantes/angel.ossa/Descargas/Jersey_Libraries/lib/jettison-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="ConvertRomanNumbersWebApp"/>
+        <property name="java-output-path" value="/ConvertRomanNumbersWebApp/build/classes"/>
+    </wb-module>
+</project-modules>
