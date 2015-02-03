@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript" src="resources/js/angular.js"></script>
+<!-- <script type="text/javascript" src="resources/js/app.js"></script> -->
+<script type="text/javascript" src="resources/js/convertscript.js"></script>
+<link rel="" type="text/css"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script type="text/javascript"
+	src="resources/bootstrap/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="resources/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript"
+	src="resources/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="resources/bootstrap/css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css"
+	href="resources/bootstrap/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css"
+	href="resources/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="resources/bootstrap/css/bootstrap.min.css">
 <meta charset="UTF-8">
 <title>Convert Roman Numbers Web App</title>
 </head>
-<body>
-	<h1>Convert Roman Numbers Web App</h1>
+<body ng-app="angularModule">
+	<form class="form-horizontal" name="mainForm" role="form"
+		ng-controller="mainController">
+		<div class="container">
+			<h1 style="text-align: center;">Convert Roman Numbers Web App</h1>
+			<br>
+			<div class="row" style="text-align: center;">
+				<span class="input-group-addon"> <label class="control-label">Ingrese
+						el número que desea convertir a número romano: </label> <input
+					class="form-control" type="text" ng-model="number" />
+				</span>
+				<button class="btn btn-success" type="button" ng-click="convert()">
+					<span class="glyphicon glyphicon-refresh"></span>Convertir
+				</button>
+			</div>
+			<br> <br>
+			<div class="row" style="text-align: center;">
+				<span class="input-group-addon"> <label class="control-label">El
+						número ingresado en números romanos es: {{romanNumber}}</label>
+				</span>
+			</div>
+		</div>
+	</form>
 </body>
 </html>

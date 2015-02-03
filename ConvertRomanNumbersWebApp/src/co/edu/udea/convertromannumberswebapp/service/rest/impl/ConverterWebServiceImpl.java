@@ -8,6 +8,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import co.edu.udea.convertromannumberswebapp.model.Converter;
+import co.edu.udea.convertromannumberswebapp.model.Response;
 import co.edu.udea.convertromannumberswebapp.service.rest.IConvertWebService;
 
 @Path("/number")
@@ -15,16 +16,18 @@ import co.edu.udea.convertromannumberswebapp.service.rest.IConvertWebService;
 public class ConverterWebServiceImpl implements IConvertWebService {
 
 	private Converter converter;
+	private Response response;
 
 	public ConverterWebServiceImpl() {
-		converter = new Converter();
+		response = new Response();
 	}
 
 	@GET
 	@Override
 	@Produces(value = { MediaType.APPLICATION_JSON })
-	public String ConverterToRomanNumber(
+	public Response ConverterToRomanNumber(
 			@QueryParam(value = "number") String number) {
-		return converter.ConverterToRomanNumber(number);
+		response = converter.ConverterToRomanNumber(number);
+		return response;
 	}
 }

@@ -8,29 +8,28 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
-@XmlRootElement
 public class Converter {
 
-	@XmlTransient
 	private ArrayList<String> units;
-	@XmlTransient
+
 	private ArrayList<String> tens;
-	@XmlTransient
+
 	private ArrayList<String> hundreds;
-	@XmlTransient
+
 	private ArrayList<String> thousands;
-	private String response;
-	private String request;
+
+	public Response response;
 
 	public Converter() {
 		initComponents();
 	}
 
-	public String ConverterToRomanNumber(String number) {
-
+	public Response ConverterToRomanNumber(String number) {
+		response.setRequest(number);
 		if (isEmpty(number) || containsLetters(number)
 				|| indexOut("9999", number)) {
-			return "error";
+			response.setResponse("error");
+			return response;
 		}
 		int aux = Integer.parseInt(number);
 		int unit = aux % 10;
@@ -51,11 +50,12 @@ public class Converter {
 		} else {
 			result = (String) units.get(aux);
 		}
-		return result;
+		response.setResponse(result);
+		return response;
 	}
 
 	public boolean isEmpty(String number) {
-		if (number.isEmpty() || number == null || number.equals("")) {
+		if (number == null || number.equals("") || number.isEmpty()) {
 			return true;
 		} else {
 			return false;
@@ -88,6 +88,7 @@ public class Converter {
 		chargeTens();
 		chargeHundreds();
 		chargeThousands();
+		response = new Response();
 	}
 
 	public void chargeUnits() {
